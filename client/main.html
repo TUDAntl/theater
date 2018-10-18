@@ -1,0 +1,19 @@
+<head>
+  <title>theater</title>
+</head>
+
+<body>
+
+  <h1>Welcome to Meteor!</h1>
+  {{> slots}}
+
+</body>
+
+<template name="slots">
+  <p> available slots: </p>
+  <ol>
+    {{#each aaa}}
+      <li>{{fslots}}</li>
+    {{/each}}
+  </ol>
+</template>
