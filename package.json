@@ -1,0 +1,28 @@
+{
+  "name": "theater",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.0.0",
+    "jquery": "^3.3.1",
+    "jsdom": "^12.2.0",
+    "meteor-node-stubs": "^0.4.1",
+    "moment": "^2.22.2",
+    "request": "^2.88.0",
+    "require": "^2.4.20",
+    "sync-request": "^6.0.0",
+    "xhr": "^2.5.0"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.js",
+      "server": "server/main.js"
+    },
+    "testModule": "tests/main.js"
+  }
+}
