@@ -1,4 +1,85 @@
+head{
+  padding: 10px;
+}
+
+@media only screen and (min-device-width: 600px){
+
 body {
   padding: 10px;
   font-family: sans-serif;
+  background-color: rgba(100, 84, 20, 0.1);
+}
+
+.box1 {
+  padding: 10px;
+  float: left;
+  width: 30%;
+  background-color: rgba(255, 84, 20, 0.1);
+  outline-style: double;
+}
+.boxChart1 {
+  margin-left: 20px;
+  padding: 10px;
+  float: left;
+  width: 30%;
+
+}
+
+.boxChart2 {
+  margin-right: 90px;
+  padding: 10px;
+  float: right;
+  width: 30%;
+
+}
+
+.box3{
+  margin-left: 20px;
+  padding: 10px;
+  float: left;
+  width: 30%;
+  background-color: rgba(255, 84, 20, 0.1);
+  outline-style: double;
+}
+}
+
+@media only screen and (max-device-width: 599px){
+
+body {
+  padding: 10px;
+  font-family: sans-serif;
+  background-color: rgba(100, 84, 20, 0.1);
+}
+
+.box1 {
+  padding: 10px;
+  float: left;
+  width: 30%;
+  background-color: rgba(255, 84, 20, 0.1);
+  outline-style: double;
+}
+.boxChart1 {
+  margin-left: 20px;
+  padding: 10px;
+  float: left;
+  width: 30%;
+
+}
+
+.boxChart2 {
+  margin-right: 90px;
+  padding: 10px;
+  float: right;
+  width: 30%;
+
+}
+
+.box3{
+  margin-left: 20px;
+  padding: 10px;
+  float: left;
+  width: 30%;
+  background-color: rgba(255, 84, 20, 0.1);
+  outline-style: double;
+}
 }

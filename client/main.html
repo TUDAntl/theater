@@ -4,16 +4,66 @@
 
 <body>
 
-  <h1>Welcome to Meteor!</h1>
-  {{> slots}}
+  <h1>Working Title</h1>
+
+  <div class="box1" >
+    {{> slots}}
+  </div>
+
+  <div class="box3">
+    {{> lastAlerts}}
+  </div>
+
+  <div class="boxChart1" >
+    {{> ChartStaat}}
+  </div>
+
+
+
+
+
 
 </body>
 
+<template name="lastAlerts">
+<p>
+  &#160;&#160;&#160;&#160;Last Alert:<br><br>
+  {{#each getLastAlert}}
+  <li>
+  {{this.time}} &#160;&#160;&#160;&#160;{{this.alert}}
+</li>
+{{/each}}
+</p>
+</template>
+
 <template name="slots">
-  <p> available slots: </p>
-  <ol>
-    {{#each aaa}}
-      <li>{{fslots}}</li>
+
+  <p>
+      &#160;&#160;
+      Slots
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;
+      Time
+  </p>
+
+  <p  >
+    {{#each getFslots}}
+
+      <li>
+
+          {{this.fslots}}
+          &#160;&#160;&#160;&#160;&#160;&#160;&#160;
+          {{this.time}}
+          &#160;&#160;&#160;&#160;&#160;&#160;&#160;
+          {{this.alert}}
+        </li>
+
     {{/each}}
-  </ol>
+  </p>
+
+</template>
+
+<template name="ChartStaat">
+  <div class="row">
+    <canvas id="myChartStaat" width="400" height="400"></canvas>
+  </div>
 </template>

@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.0.0",
+    "chart.js": "^2.7.3",
     "jquery": "^3.3.1",
     "jsdom": "^12.2.0",
     "meteor-node-stubs": "^0.4.1",
